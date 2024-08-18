@@ -1,0 +1,19 @@
+body {
+    background-color: #ECEFF1;
+  }
+  
+  .canvas {
+    display: block;
+    position: relative;
+    width: 620px;
+    height: 420px;
+    border-radius: 5px;
+  }
+
+  .dot {
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    top: 200px;
+  }

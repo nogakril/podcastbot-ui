@@ -1,0 +1,108 @@
+.first_loading {
+    background-color: #191919;
+    left: 135px;
+    animation-name: pre-rotation-first, rotation;
+    animation-timing-function: ease-in-out, linear;
+    animation-duration: .8s, 3s;
+    animation-delay: .3s, .6s;
+    animation-iteration-count: 1, infinite;
+    animation-fill-mode: forwards, none;
+  }
+  
+  .second_loading {
+    background-color: #191919;
+    left: 230px;
+    animation-name: pre-rotation-second, rotation;
+    animation-timing-function: ease-in-out, linear;
+    animation-duration: .8s, 3s;
+    animation-delay: .4s, .6s;
+    animation-iteration-count: 1, infinite;
+    animation-fill-mode: forwards, none;
+  }
+  
+  .third_loading {
+    background-color: #191919;
+    left: 325px;
+    animation-name: pre-rotation-third, rotation;
+    animation-timing-function: ease-in-out, linear;
+    animation-duration: .8s, 3s;
+    animation-delay: .4s, .6s;
+    animation-iteration-count: 1, infinite;
+    animation-fill-mode: forwards, none;
+  }
+  
+  .fourth_loading {
+    background-color: #191919;
+    left: 420px;
+    animation-name: pre-rotation-fourth, rotation;
+    animation-timing-function: ease-in-out, linear;
+    animation-duration: .8s, 3s;
+    animation-delay: .2s, .6s;
+    animation-iteration-count: 1, infinite;
+    animation-fill-mode: forwards, none;
+  }
+  
+  
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes pre-rotation-first {
+    90% {
+      top: 153px;
+  /*     left: 182.5px; */
+    }
+    
+    100%{
+      transform-origin: 69px 69.5px;
+      top: 153px;
+      left: 227.5px;
+    }
+  }
+  
+  @keyframes pre-rotation-second {
+    50%{
+      top: 113px;
+    }
+    
+    100%{
+      transform-origin: -25px 69.5px;
+      top: 153px;
+      left: 322.5px;
+    }
+  }
+  
+  @keyframes pre-rotation-third {
+    to{
+      transform-origin: -25.5px -25.5px;
+      top: 247.5px;
+      left: 322.5px;
+    }
+  }
+  
+  @keyframes pre-rotation-fourth {
+    50%{
+      top: 287.5px;
+    }
+    100%{
+      transform-origin: 69.5px -25.5px;
+      top: 247.5px;
+      left: 227.5px;
+    }
+  }
+  
+  @keyframes rotation-acceleration {
+    from {}
+    to{
+      transform: rotate(180deg);
+    }
+  }
+  
+  
