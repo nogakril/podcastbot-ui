@@ -1,5 +1,7 @@
+@import './../../varaiables.css';
+
 .first_listening {
-    background-color: #191919;
+    background-color:  var(--dot-color);
     left: 135px;
     animation-name: listening;
     animation-timing-function: ease-in-out;
@@ -10,7 +12,7 @@
   }
   
   .second_listening {
-    background-color: #191919;
+    background-color:  var(--dot-color);
     left: 230px;
     animation-name: listening;
     animation-timing-function: ease-in-out;
@@ -21,7 +23,7 @@
   }
   
   .third_listening {
-    background-color: #191919;
+    background-color:  var(--dot-color);
     left: 325px;
     animation-name: listening;
     animation-timing-function: ease-in-out;
@@ -32,7 +34,7 @@
   }
   
   .fourth_listening {
-    background-color: #191919;
+    background-color:  var(--dot-color);
     left: 420px;
     animation-name: listening;
     animation-timing-function: ease-in-out;

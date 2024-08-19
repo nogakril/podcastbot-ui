@@ -1,0 +1,11 @@
+:root {
+    --dot-color: #EEEEEE;
+    --btn-color: #EEEEEE;
+    --status-color: #EEEEEE;
+    --instructions-color: #EEEEEE;
+    --background-color: #111111;
+    --instructions-background-color: #313131;
+    --instructions-border-color: #606060;
+    --btn-hover-color: #FBD3CB;
+    --btn-active-color: #FF977D;
+}

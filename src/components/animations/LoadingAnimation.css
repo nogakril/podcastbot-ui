@@ -1,5 +1,7 @@
+@import './../../varaiables.css';
+
 .first_loading {
-    background-color: #191919;
+    background-color: var(--dot-color);
     left: 135px;
     animation-name: pre-rotation-first, rotation;
     animation-timing-function: ease-in-out, linear;
@@ -10,7 +12,7 @@
   }
   
   .second_loading {
-    background-color: #191919;
+    background-color:  var(--dot-color);
     left: 230px;
     animation-name: pre-rotation-second, rotation;
     animation-timing-function: ease-in-out, linear;
@@ -21,7 +23,7 @@
   }
   
   .third_loading {
-    background-color: #191919;
+    background-color:  var(--dot-color);
     left: 325px;
     animation-name: pre-rotation-third, rotation;
     animation-timing-function: ease-in-out, linear;
@@ -32,7 +34,7 @@
   }
   
   .fourth_loading {
-    background-color: #191919;
+    background-color:  var(--dot-color);
     left: 420px;
     animation-name: pre-rotation-fourth, rotation;
     animation-timing-function: ease-in-out, linear;

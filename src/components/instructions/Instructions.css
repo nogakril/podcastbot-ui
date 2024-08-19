@@ -1,0 +1,57 @@
+@import './../../varaiables.css';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap&subset=hebrew');
+
+
+.instructions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    background-color: var(--instructions-background-color);
+    border-left: 1px solid var(--instructions-border-color);
+    color: var(--instructions-color);
+    font-family: 'Open Sans', sans-serif;
+    line-height: 70%;
+  }
+
+  .divider {
+    height: 2px; 
+    background-color: var(--instructions-border-color); 
+    width: 80%; 
+    margin: 20px 0; 
+    
+  }
+
+  
+.instructions .instruction {
+    padding: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .instructions .hebrew {
+    direction: rtl; /* Right-to-left layout for Hebrew */
+    text-align: right;
+    letter-spacing: 1.1px;
+  }
+  
+  .instructions .english {
+    direction: ltr; /* Left-to-right layout for English */
+    text-align: left;
+    letter-spacing: 1.1px;
+  }
+  
+  .instructions h2 {
+    font-size: 24px;
+    color: var(--instructions-color);
+    font-weight: bold;
+  }
+  
+  .instructions ol {
+    padding-left: 20px;
+  }
+  
+  .instructions li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }

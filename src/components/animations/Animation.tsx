@@ -3,9 +3,10 @@ import  './LoadingAnimation.css';
 import  './ListeningAnimation.css';
 import  './SpeakingAnimation.css';
 import './Animation.css';
+import { Status } from '../../App';
 
 interface IProps {
-    state?: string;
+    state?: Status;
 }
 
 const StateAnimation: FunctionComponent<IProps> = ({state}) => {
