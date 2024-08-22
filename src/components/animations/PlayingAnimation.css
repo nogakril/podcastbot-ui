@@ -1,0 +1,105 @@
+@import './../../varaiables.css';
+
+.first_playing {
+    background-color:  var(--dot-color);
+    left: 135px;
+    animation-name: playing-first;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1.8s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+  }
+  
+  .second_playing {
+    background-color:  var(--dot-color);
+    left: 230px;
+    animation-name: playing-second;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1.8s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+  }
+  
+  .third_playing {
+    background-color:  var(--dot-color);
+    left: 325px;
+    animation-name: playing-third;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1.8s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+  }
+  
+  .fourth_playing {
+    background-color:  var(--dot-color);
+    left: 420px;
+    animation-name: playing-fourth;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1.8s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+  }
+  
+  @keyframes playing-first {
+    0% {
+      transform: translateX(0px);
+    }
+    
+    50% {
+      transform: translateX(142px);
+    }
+    
+    100% {
+      transform: translateX(0px);
+    }
+  }
+
+  @keyframes playing-second {
+    0% {
+      transform: translateX(0px);
+    }
+    
+    50% {
+      transform: translateX(47px);
+      height: 60px;
+      width: 60px;
+    }
+    
+    100% {
+      transform: translateX(0px);
+    }
+  }
+
+  @keyframes playing-third {
+    0% {
+      transform: translateX(0px);
+    }
+    
+    50% {
+      transform: translateX(-47px);
+      height: 60px;
+      width: 60px;
+    }
+    
+    100% {
+      transform: translateX(0px);
+    }
+  }
+
+  @keyframes playing-fourth {
+    0% {
+      transform: translateX(0px);
+    }
+    
+    50% {
+      transform: translateX(-142px);
+    }
+    
+    100% {
+      transform: translateX(0px);
+    }
+  }

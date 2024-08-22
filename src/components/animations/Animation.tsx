@@ -2,6 +2,7 @@ import React, { FunctionComponent, useMemo } from 'react';
 import  './LoadingAnimation.css';
 import  './ListeningAnimation.css';
 import  './SpeakingAnimation.css';
+import  './PlayingAnimation.css';
 import './Animation.css';
 import { Status } from '../../App';
 

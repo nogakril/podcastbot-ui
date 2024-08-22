@@ -8,6 +8,7 @@ body {
   
   .btn {
     background: var(--btn-color);
+    transition: background-color 0.4s ease-in-out; 
   }
 
   .btn:hover {
@@ -16,6 +17,7 @@ body {
   
   .btn:active {
     background: var(--btn-active-color); /* Color when clicked */
+    transition: background-color 0.4s ease-in-out; 
   }
   
   .center {
@@ -27,8 +29,8 @@ body {
   
   .circle {
     display: flex;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     box-shadow: 0px 0px 1px 1px var(--dot-color);
     justify-content: center;
