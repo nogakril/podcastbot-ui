@@ -19,14 +19,18 @@
     height: 2px; 
     background-color: var(--instructions-border-color); 
     width: 80%; 
-    margin: 20px 0; 
-    
+    margin: 5px 0; 
+  }
+
+  .logo {
+    margin-top: 5px;
+    border-radius: 8px;
+    width: 180px;
   }
 
   
 .instructions .instruction {
-    padding: 5px;
-    margin-bottom: 20px;
+    padding: 15px;
   }
   
   .instructions .hebrew {
@@ -42,14 +46,11 @@
   }
   
   .instructions h2 {
-    font-size: 24px;
+    font-size: 20px;
     color: var(--instructions-color);
     font-weight: bold;
   }
-  
-  .instructions ol {
-    padding-left: 20px;
-  }
+ 
   
   .instructions li {
     margin-bottom: 10px;

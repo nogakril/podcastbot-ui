@@ -50,7 +50,9 @@
     }
     
     50% {
-      transform: translateX(142px);
+      transform: translateX(160px);
+      height: 20px;
+      width: 20px; 
     }
     
     100% {
@@ -64,9 +66,9 @@
     }
     
     50% {
-      transform: translateX(47px);
-      height: 60px;
-      width: 60px;
+      transform: translateX(47px) translateY(-10px);
+      height: 70px;
+      width: 70px;
     }
     
     100% {
@@ -80,9 +82,9 @@
     }
     
     50% {
-      transform: translateX(-47px);
-      height: 60px;
-      width: 60px;
+      transform: translateX(-47px) translateY(-10px);
+      height: 70px;
+      width: 70px;
     }
     
     100% {
@@ -96,7 +98,9 @@
     }
     
     50% {
-      transform: translateX(-142px);
+      transform: translateX(-120px);
+      height: 20px;
+      width: 20px; 
     }
     
     100% {

@@ -43,7 +43,7 @@ const CustomButtonQuit = styled(Button)(({ theme }) => ({
 function App() {
   const [url, setUrl] = useState<string>("");
   const [open, setOpen] = useState(false);
-  const [status, setStatus] = useState<Status>('done');
+  const [status, setStatus] = useState<Status>('pending');
 
   useEffect(() => {
     socket.on('connect', () => {
@@ -89,9 +89,10 @@ function App() {
     setStatus('pending');
   }
 
-  const handleQuitClicked = () => {
-    setStatus('pending');
-  }
+  // const handleQuitClicked = () => {
+  //   socket.emit('stop_process');
+  //   setStatus('pending');
+  // }
 
   const displayStatus = useMemo(() => {
     if (status === 'loading') {
@@ -109,11 +110,11 @@ function App() {
 
   return (
     <div className='container'>
-            <div style={{position: 'fixed', bottom: '0px', margin: '20px'}}>
+        {/* { <div style={{position: 'fixed', bottom: '0px', margin: '20px'}}>
           <CustomButtonQuit variant="outlined" startIcon={<HighlightOffIcon />} onClick={handleQuitClicked}>
               {'Quit'}
           </CustomButtonQuit>
-        </div>
+        </div>} */}
       <div className='main'>
         {status === 'pending' && <StartRecordingBtn onClick={handleClick} btnText='REC' ></StartRecordingBtn>}
         {status === 'done' && 
@@ -140,8 +141,7 @@ function App() {
           </>
         }
       </div>
-      <Instructions>
-      </Instructions>
+      <Instructions/>
       <Snackbar open={open} autoHideDuration={5000} onClose={handleClose} anchorOrigin={{ vertical: 'top', horizontal: 'right' }}>
         <Alert onClose={handleClose} severity="warning" sx={{ width: '100%' }}>
           The recording session is already in progress.
