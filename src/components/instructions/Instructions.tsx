@@ -7,14 +7,14 @@ const Instructions: FunctionComponent= () => {
     return (
         <div className="instructions">
           
-          <div className='logo'><img src={logo} alt="logo" className='logo'/></div>
+          {/* <div className='logo'><img src={logo} alt="logo" className='logo'/></div> */}
           
           <div className="instruction hebrew">
             <h2>הוראות הקלטה</h2> {/* Hebrew for 'Instructions' */}
             <ol>
-              <li>בחר נושא שאתה רוצה לדון בו במהלך השיחה עם הבוט.</li>
+              <li>בחר נושא שתרצה לדון בו במהלך השיחה עם הבוט.</li>
               <li>שים לב: השיחה תתקיים באנגלית בלבד.</li>
-              <li>דבר באופן איטי וברור ל המיקרופון כדי להבטיח הבנה מקסימלית.</li>
+              <li>דבר באופן איטי וברור למיקרופון כדי להבטיח הבנה מקסימלית.</li>
               <li>כדי להתחיל את ההקלטה, לחץ על כפתור ה-REC.</li>
             </ol>
           </div>

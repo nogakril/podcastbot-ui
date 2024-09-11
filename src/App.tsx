@@ -65,7 +65,7 @@ function App() {
 
   const handleClick = useCallback(() => {
     console.log('click')
-    setStatus('loading');
+    // setStatus('loading');
     fetch("http://localhost:5000/run_session")
     .then(response => response.json())
     .then(data => {
@@ -78,6 +78,8 @@ function App() {
     })
     .catch(err => {
       console.log(err)
+      setOpen(true);
+      setStatus('pending');
       })
     }, []);
 
@@ -144,7 +146,7 @@ function App() {
       <Instructions/>
       <Snackbar open={open} autoHideDuration={5000} onClose={handleClose} anchorOrigin={{ vertical: 'top', horizontal: 'right' }}>
         <Alert onClose={handleClose} severity="warning" sx={{ width: '100%' }}>
-          The recording session is already in progress.
+          Some error has occured, try again.
         </Alert>
       </Snackbar>
 
