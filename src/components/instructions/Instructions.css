@@ -12,7 +12,8 @@
     border-left: 1px solid var(--instructions-border-color);
     color: var(--instructions-color);
     font-family: 'Open Sans', sans-serif;
-    line-height: 70%;
+    font-size: medium;
+    line-height: 80%;
   }
 
   .divider {
@@ -23,14 +24,19 @@
   }
 
   .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--btn-hover-color);
     margin-top: 5px;
-    border-radius: 8px;
-    width: 180px;
+    border-radius: 360px;
+    width: 75px;
+    height: 75px;
   }
 
   
 .instructions .instruction {
-    padding: 15px;
+    padding: 30px;
   }
   
   .instructions .hebrew {
@@ -55,4 +61,8 @@
   .instructions li {
     margin-bottom: 10px;
     line-height: 1.5;
+  }
+
+  .header {
+    margin-bottom: 40px;
   }

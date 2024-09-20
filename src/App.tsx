@@ -129,7 +129,7 @@ function App() {
             </div>
             <span className='done-btn'>
             <CustomButtonDone variant="outlined" startIcon={<CheckCircleIcon />} onClick={handleDoneClicked}>
-            {'Scan to download your recording'}
+            {'Done, Click to start a new recording'}
             </CustomButtonDone>
             </span>
         </div>
