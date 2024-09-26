@@ -8,11 +8,15 @@ interface IProps {
 
 const StartRecordingBtn: FunctionComponent<IProps> = ({btnText, onClick}) => {
     return (
+        <>
+        <span>Put the headphones on and click REC to start</span>
+
         <div className="center">
             <div className="circle pulse btn" onClick={onClick}>
                 {btnText}
             </div>
         </div>
+        </>
     )
 }
 export default StartRecordingBtn;

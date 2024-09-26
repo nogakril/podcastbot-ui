@@ -53,6 +53,9 @@ function App() {
 
   useEffect(() => {
     socket.on('status_update', data => {
+      if (data.state === 'pending') {
+        setOpen(true);
+      }
       setStatus(data.state);
       console.log('Update from server:', data.state);
     });
@@ -104,8 +107,9 @@ function App() {
     } else if (status === 'speaking') {
       return 'The bot is speaking.';
     } else if (status === 'playing') {
-      return 'Playing your recording.';
-    } else  {
+      return 'Preparing your QR to download the podcast.';
+    }
+     else  {
       return '';
     }
   }, [status]); 
@@ -134,6 +138,7 @@ function App() {
             </span>
         </div>
       }
+      
         {status !== 'pending' && status !== 'done' &&
           <>
             <StateAnimation state={status}></StateAnimation>
@@ -142,11 +147,12 @@ function App() {
             </div>
           </>
         }
+        
       </div>
       <Instructions/>
       <Snackbar open={open} autoHideDuration={5000} onClose={handleClose} anchorOrigin={{ vertical: 'top', horizontal: 'right' }}>
         <Alert onClose={handleClose} severity="warning" sx={{ width: '100%' }}>
-          Some error has occured, try again.
+          Some error has occured, please try again.
         </Alert>
       </Snackbar>
 
